@@ -1,0 +1,52 @@
+Hari 1 – Berlatih HTML
+ 
+Target‌
+Menguasai dasar-dasar HTML
+Menguasai tag-tag pada HTML
+ 
+Petunjuk Pengerjaan
+ 
+Buat File HTML index
+ 
+
+Buatlah sebuah file index.html yang akan menampilkan halaman seperti berikut:
+
+
+ 
+ 
+Buat halaman form
+ 
+
+Buatlah file baru bernama form.html yang berisi form seperti berikut :
+
+nb: Gunakan Element Form untuk Menuju ke welcome.html
+
+
+
+
+ 
+ 
+Buat halaman selamat datang
+ 
+
+Setelah user berhasil mendaftar, berikan halaman welcome.html yang memberikan ucapan selamat datang seperti berikut:
+
+
+ 
+ 
+Hasil Akhir
+ 
+
+Setelah semua file html yang kita perlukan siap, maka website kita sudah berjalan jika kita mulai dari index.html
+
+
+Enter a caption for this image (optional)
+ 
+
+ 
+
+ 
+
+Catatan : Jika gambar tidak begitu jelas silakan klik kanan pada gambar lalu pilih buka gambar pada tab baru (Open image in a new tab) atau simpan gambar sebagai (Save image as).
+
+nb: jika terdapat kesulitan di pengerjaan soalnya bisa lihat video #Review materi dari sanbercode

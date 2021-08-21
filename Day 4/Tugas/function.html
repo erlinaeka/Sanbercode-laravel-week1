@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Function</title>
+</head>
+<body>
+    <h1>Berlatih Fungsi</h1>
+
+    <h3>Contoh Soal</h3>
+    <div id="contohJawaban">
+
+    </div>
+
+    <h3>Soal No.1</h3>
+    <div id="jawaban1">
+
+    </div>
+
+    <h3>Soal No.2</h3>
+    <div id="jawaban2">
+
+    </div>
+
+    <h3>Soal No.3</h3>
+    <div id="jawaban3">
+
+    </div>
+
+    <script>
+
+        function tampilkan() {
+            document.getElementById("contohJawaban").innerHTML = "Aku Tampil"
+        }
+        tampilkan()
+
+
+        function teriak() {
+            document.getElementById("jawaban1").innerHTML = "Hallo Function!"
+        }
+        teriak()
+
+
+        function kalikan(num1, num2) {
+            var kali =  num1 * num2;
+            document.getElementById("jawaban2").innerHTML = kali;
+        }
+        kalikan(5, 4)
+        
+
+        function buatKalimat(nama, umur, alamat, hobi) {
+            var KalimatBaru = "Nama Saya " + nama + "," + " " + "umur saya " + umur + "," + " " + "alamat saya di " + alamat + "," + " " + "dan saya punya hobby yaitu " + hobi ;
+            document.getElementById("jawaban3").innerHTML = KalimatBaru;
+        }
+
+        var name = "John Doe";
+        var age = 30;
+        var address = "Jln. Malioboro, Yogjakarta";
+        var hobby = "gaming";
+        buatKalimat(name, age, address, hobby);
+
+    </script>
+</body>
+
+
+</html>

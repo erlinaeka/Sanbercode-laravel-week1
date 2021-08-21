@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array</title>
+</head>
+<body>
+
+    <h1>Berlatih Array</h1>
+
+    <h3>Membalikkan Kalimat</h3>
+    <form action="#" id="balikString">
+        <input type="text" id="word" placeholder="masukkan kalimat">
+        <input type="submit" value="Balik Kalimat">
+    </form>
+    <div id="jawaban1" style="margin-top: 10px"></div>
+    
+    <h3>Looping Array</h3>
+    <div id="jawaban2"></div>
+
+
+    <script>
+        var output = ""
+        function balikString(kata){
+            for(var i = kata.length - 1; i >= 0; i-- ){
+                output += kata[i];
+            }
+            return output
+        }
+
+       
+        // Driver Code, jangan diganggu!
+        var formBalikString = document.getElementById("balikString")
+        formBalikString.addEventListener("submit", function(e) {
+            e.preventDefault()
+            var word = document.getElementById("word").value
+            var reverseWord = balikString(word)
+
+            document.getElementById("jawaban1").innerHTML = reverseWord
+        })
+
+        var input = [
+                ["0001", "Roman Alamsyah", "Bandar Lampung", "21/05/1989", "Membaca"],
+                ["0002", "Dika Sembiring", "Medan", "10/10/1992", "Bermain Gitar"],
+                ["0003", "Winona", "Ambon", "25/12/1965", "Memasak"],
+                ["0004", "Bintang Senjaya", "Martapura", "6/4/1970", "Berkebun"]
+            ]
+        
+        // Code kamu di sini, lakukan looping terhadap input di atas
+        function dataHandling(array){
+            var isiarray = ""
+            for (var i = 0; i < array.length; i++)
+            {
+                isiarray += "Nomor ID: " + array[i][0] + "<br>" + "Nama Lengkap: " + array[i][1] + "<br>" + "TTL: " + array[i][2] + " " + array[i][3] + "<br>" + "Hobi: " + array[i][4] + "<br><br>"
+            }
+            return isiarray
+        }
+
+        
+        var jawaban2 = dataHandling(input)
+
+        document.getElementById("jawaban2").innerHTML = jawaban2  
+
+    </script>
+    
+</body>
+</html>

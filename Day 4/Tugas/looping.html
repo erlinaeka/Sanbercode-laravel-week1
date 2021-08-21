@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Looping</title>
+
+</head>
+<body>
+    <h1>Berlatih Looping</h1>
+    <h3>Contoh Hasil Looping</h3>
+    <div id="example">
+
+    </div>
+    <h3>Soal No. 1</h3>
+    <div id="jawaban1">
+
+    </div>
+    <h3>Soal No. 2</h3>
+    <div id="jawaban2"></div>
+
+
+    <script>
+        // Contoh untuk melakukan looping dengan for
+        var jawabanContoh = ""
+        for (var i = 0; i < 5; i++) {
+            jawabanContoh += "ini adalah angka ke: " + [i] + "<br>"
+            
+        }
+        
+        document.getElementById("example").innerHTML = jawabanContoh
+    
+     
+        // JAWABAN NOMER 1
+        var i = 2
+        var loop1 = ""
+        while (i<=20){
+            loop1 += i + " - I love coding <br>"
+            i += 2
+        }
+        var j = 20
+        var loop2 = ""
+        while (j>=2){
+            loop2 += j + " - I will become web developer <br>"
+            j -= 2
+        }
+        var jawaban1 = "<h4>LOOPING PERTAMA</h4><br>" + loop1 + "<br><h4>LOOPING KEDUA</h4><br>" + loop2;
+        document.getElementById("jawaban1").innerHTML = jawaban1
+    
+       
+        // JAWABAN NOMER 2
+        
+        var loopsoal2 =''
+        for (var k=1; k<=20; k++){
+            if (k % 2 == 1)
+            {
+                if(k % 3 == 0)
+                {
+                    loopsoal2 += k + " " + " - I Love Coding<br>"                 
+                }
+                else
+                {
+                    loopsoal2 += k + " " + " - Santai<br>"
+                }
+            }else 
+            {
+                loopsoal2 += k + " " + " - Berkualitas <br>"
+            }
+        }
+    
+        var jawaban2 = loopsoal2
+        document.getElementById("jawaban2").innerHTML = jawaban2
+    
+    </script>
+</body>
+
+</html>

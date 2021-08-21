@@ -1,0 +1,67 @@
+body {
+  background-image: url(../img/pattern.jpg);
+  margin: 0px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.navbar img {
+  width: 200px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  display: inline;
+  padding-right: 25px;
+}
+
+ul li a {
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.content {
+  background-color: white;
+  width: 70%;
+  margin: auto;
+  margin-top: 75px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.content h2 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+#isi_content {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#isi_content p {
+  font-size: 14px;
+}
+
+.footer {
+  background-color: black;
+  position: static;
+  bottom: 0;
+}
+
+.footer p {
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
